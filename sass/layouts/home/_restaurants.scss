@@ -1,0 +1,58 @@
+@import "../../variables/globals";
+
+
+.restaurants-container {
+
+    background-color: $color-gray;
+
+    .restaurants-container-text {
+        padding: 1.5rem 0 0 1.5rem;
+    }
+
+    .restaurants-container-items {
+        @include flex;
+
+        flex-direction: column;
+        align-content: center;
+        padding-top: 1rem;
+        gap: 1.25rem;
+
+        .restaurant-item-card {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% - 2rem);
+            height: 200px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+            .restaurant-card-image {
+                width: 100%;
+                height: 65%;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+            }
+
+
+            .restaurant-card-content {
+                @include flex(space-between);
+
+                //padding: 0.25rem 0.75rem 0.75rem 0.75rem;
+
+                .restaurant-card-content-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .restaurant-card-content-text {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .restaurant-card-heart {
+                    //padding: 1px;
+                }
+            }
+        }
+    }
+}

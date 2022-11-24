@@ -1,0 +1,18 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-gray :#eaeaea;
+$color-gray-secondary :#f7f7f7;
+$color-gray-dark: #7e7e7e;
+
+
+@mixin base-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@mixin flex($justify-content: center, $align-items: center) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

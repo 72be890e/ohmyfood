@@ -1,0 +1,60 @@
+@import "../../variables/globals";
+
+.functionning-container {
+
+    .functionning-container-text {
+        padding: 1.5rem 0 0 1.5rem;
+    }
+
+    .functionning-container-items {
+        @include flex;
+        
+        flex-direction: column;
+        align-content: center;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        gap: 1.25rem;
+
+        .functionning-container-item {
+            position: relative;
+            height: 70px;
+            width: calc(100% - 2rem);
+            border-radius: 20px;
+            background: $color-gray-secondary;
+            box-shadow: rgb(50 50 93 / 25%) 1px 8px 20px -2px;
+
+            @include flex(normal);
+
+            .functionning-item-num {
+                @include flex;
+
+                border-radius: 100%;
+                height: 1.5rem;
+                width: 1.5rem;
+                position: relative;
+                right: 3px;
+                background: $color-primary;
+                
+                span {
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+
+            .functionning-item-content {
+                @include flex;
+                grid-gap: 1.5rem;
+                padding-left: 1.15rem;
+
+                i {
+                    color: $color-gray-dark;
+                    font-size: 20px;
+                }
+                span {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
