@@ -1,9 +1,11 @@
 @import './variables/globals';
 @import './layouts/home';
+@import './layouts/restaurant';
 
 * {
     font-family: 'Roboto';
 }
+
 body {
     margin: initial;
 }

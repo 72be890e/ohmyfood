@@ -1,0 +1,84 @@
+@import "../../variables/globals";
+
+
+.restaurant-image img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-container {
+    margin-top: -3.5rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: $color-gray-secondary;
+    position: relative;
+
+    .menu-container-header {
+        padding: 1rem 2rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu-header-title {
+            font-family: Shrikhand;
+        }
+
+        .menu-header-heart {
+            font-size: 25px;
+        }
+    }
+
+    .menu-container-entries {
+        display: grid;
+
+        .container-entry {
+            max-width: 100%;
+            overflow: hidden;
+            padding: 0 1rem;
+
+            .entry-title {
+                text-transform: uppercase;
+                position: relative;
+                padding-bottom: 0.5rem;
+                font-weight: 400;
+            }
+
+            .entry-item {
+                background-color: white;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                border-radius: 0.75rem;
+                margin: 1rem 0;
+                box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+                max-width: 100%;
+
+                .entry-item-content {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: grid;
+                    flex: 1;
+
+                    .item-title {
+                        font-weight: 700;
+                        margin: 0;
+                    }
+
+                    .item-description {
+                        margin: 0;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+
+                .entry-item-price {
+                    font-weight: 700;
+                    display: grid;
+                    align-items: flex-end;
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
