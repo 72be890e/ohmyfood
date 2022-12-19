@@ -1,0 +1,47 @@
+@import "../../variables/globals";
+
+.spinner-container {
+    @include flex;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    animation-name: hidden;
+    animation-delay: 2500ms;
+    animation-fill-mode: forwards;
+    animation-duration: 425ms;
+
+    .spinner {
+        @include flex;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .spinner:before {
+        content: '';
+        border: 4px solid $color-secondary;
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        animation: loaderScale 1s ease-out infinite;
+        animation-delay: 50ms;
+    }
+
+    .spinner:after {
+        content: '';
+        border: 4px solid $color-primary;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        animation: loaderScale 1s ease-out infinite;
+        animation-delay: 220ms;
+    }
+}

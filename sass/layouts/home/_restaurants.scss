@@ -57,8 +57,33 @@
 
                 .restaurant-card-heart {
                     font-size: 20px;
+                    z-index: 2;
+
+                    .card-heart-hover {
+                        color: $color-secondary;
+                        transition-duration: 500ms;
+                        display: none;
+                    }
+
+                    .card-heart-regular {
+                        transition-duration: 500ms;
+                    }
+
+                    &:hover > .card-heart-hover {
+                        transition-duration: 500ms;
+                        display: initial;
+                    }
+
+                    &:hover >  .card-heart-regular {
+                        transition-duration: 500ms;
+                        display: none;
+                    }
                 }
+
             }
         }
     }
 }
+
+
+

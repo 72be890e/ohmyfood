@@ -18,7 +18,7 @@
         font-weight: 500;
         background: $color-gray;
     }
-    
+
     .logo {
         @include flex;
 
@@ -49,19 +49,19 @@
             font-weight: 500;
             font-size: 17px;
         }
-
-        .information-button button {
-            @include base-shadow;
-
-            height: 50px;
-            border-radius: 100px;
-            border: none;
-            background: linear-gradient($color-secondary, $color-primary);
-            padding-left: 30px;
-            padding-right: 30px;
-            font-weight: 500;
-            font-size: 1rem;
-            color: white;
-        }
     }
+}
+
+.information-button button {
+    @include base-shadow;
+
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient($color-secondary, $color-primary);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
 }
