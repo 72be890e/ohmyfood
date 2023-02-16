@@ -46,7 +46,7 @@
 }
 
 .functionning-container .functionning-container-text {
-  padding: 1.5rem 0 0 6.5rem;
+  padding: 1.5rem 0 0 1.5rem;
 }
 .functionning-container .functionning-container-items {
   display: flex;
@@ -188,7 +188,7 @@
   background-color: #eaeaea;
 }
 .restaurants-container .restaurants-container-text {
-  padding: 1.5rem 0 0 6.5rem;
+  padding: 1.5rem 0 0 1.5rem;
 }
 .restaurants-container .restaurants-container-items {
   display: flex;
