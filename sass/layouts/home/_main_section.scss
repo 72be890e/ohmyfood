@@ -3,7 +3,7 @@
 
 .functionning-container {
     .functionning-container-text {
-        padding: 1.5rem 0 0 6.5rem;
+        padding: 1.5rem 0 0 1.5rem;
     }
 
     .functionning-container-items {
@@ -68,6 +68,7 @@
 
 @media (min-width: 1024px) {
     .functionning-container {
+        
         .functionning-container-items {
             display: flex;
             flex-direction: row;
@@ -80,8 +81,10 @@
                 max-width: 300px;
                 height: 7rem;
                 width: 300px;
-
             }
         }
     }
 }
+
+
+
