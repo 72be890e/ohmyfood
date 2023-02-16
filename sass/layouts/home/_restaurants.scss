@@ -6,7 +6,7 @@
     background-color: $color-gray;
 
     .restaurants-container-text {
-        padding: 1.5rem 0 0 1.5rem;
+        padding: 1.5rem 0 0 6.5rem;
     }
 
     .restaurants-container-items {
@@ -15,6 +15,7 @@
         flex-direction: column;
         align-content: center;
         padding-top: 1rem;
+        padding-bottom: 2rem;
         gap: 1.25rem;
 
         .restaurant-item-card {
@@ -25,6 +26,7 @@
             border-radius: 1.25rem;
             position: relative;
             display: block;
+            transition: box-shadow 250ms ease-in-out;
 
             .restaurant-card-image {
                 height: 10.5rem;
@@ -56,30 +58,26 @@
                 }
 
                 .restaurant-card-heart {
-                    font-size: 20px;
-                    z-index: 2;
-
-                    .card-heart-hover {
-                        color: $color-secondary;
-                        transition-duration: 500ms;
-                        display: none;
-                    }
-
-                    .card-heart-regular {
-                        transition-duration: 500ms;
-                    }
-
-                    &:hover > .card-heart-hover {
-                        transition-duration: 500ms;
-                        display: initial;
-                    }
-
-                    &:hover >  .card-heart-regular {
-                        transition-duration: 500ms;
-                        display: none;
-                    }
+                    font-size: 23px;
+                    transition: all 1500ms;
                 }
 
+                .restaurant-card-heart:hover i::before {
+                    transition: all 500ms;
+                    content: "\f004";
+                    font-weight: 900;
+                    color: $color-secondary;
+                }
+
+                .restaurant-card-heart:hover  {
+                    font-weight: 400;
+                    color: white;
+                }
+
+            }
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 20px 5px;
             }
         }
     }
@@ -87,3 +85,24 @@
 
 
 
+@media (min-width: 1024px) {
+    .restaurants-container {
+        .restaurants-container-items {
+            display: flex;
+            gap: 2.25rem;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .restaurant-item-card {
+                box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+                width: 38%;
+                background-color: white;
+                border-radius: 1.25rem;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}

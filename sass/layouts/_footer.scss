@@ -1,0 +1,29 @@
+footer {
+    width: 100%;
+    background: #353535;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+
+        .footer-title {
+            font-family: "Shrikhand", cursive;
+            font-style: italic;
+            font-weight: 700;
+            margin: 1rem 0rem;
+            color: white;
+        }
+
+        .footer-link {
+            margin: 0.5rem 0rem;
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+}
