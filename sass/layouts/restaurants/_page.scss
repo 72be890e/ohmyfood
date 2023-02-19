@@ -30,10 +30,12 @@
         }
 
         .menu-header-heart:hover i::before {
-            transition: all 500ms;
+            transition: all 500ms ease;
             content: "\f004";
             font-weight: 900;
-            color: $color-secondary;
+            background: linear-gradient(to bottom, $color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .menu-header-heart:hover {

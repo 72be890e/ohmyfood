@@ -59,19 +59,22 @@
 
                 .restaurant-card-heart {
                     font-size: 23px;
-                    transition: all 1500ms;
+                    transition: all 1500ms ease;
                 }
 
                 .restaurant-card-heart:hover i::before {
-                    transition: all 500ms;
+                    transition: all 500ms ease;
                     content: "\f004";
                     font-weight: 900;
-                    color: $color-secondary;
+                    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 .restaurant-card-heart:hover  {
+                    transition: all 500ms ease;
                     font-weight: 400;
-                    color: white;
+                    background: white;
                 }
 
             }
