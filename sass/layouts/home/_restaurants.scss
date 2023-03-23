@@ -36,6 +36,18 @@
                 cursor: pointer;
             }
 
+            .restaurant-card-new {
+                background-color: $color-tertiary;
+                color: #1b6150;
+                padding: 0.5rem;
+                font-weight: 500;
+                border-radius: 0.125rem;
+                position: absolute;
+                top: 1rem;
+                right: 0.75rem;
+                @include base-shadow
+            }
+
             .restaurant-card-content {
                 padding: 1rem;
                 position: relative;
@@ -66,12 +78,12 @@
                     transition: all 500ms ease;
                     content: "\f004";
                     font-weight: 900;
-                    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+                    background: linear-gradient(to bottom,$color-primary, $color-secondary);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
 
-                .restaurant-card-heart:hover  {
+                .restaurant-card-heart:hover {
                     transition: all 500ms ease;
                     font-weight: 400;
                     background: white;

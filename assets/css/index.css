@@ -46,7 +46,7 @@
 }
 
 .functionning-container .functionning-container-text {
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 0 0 1rem;
 }
 .functionning-container .functionning-container-items {
   display: flex;
@@ -61,8 +61,8 @@
 .functionning-container .functionning-container-items .functionning-container-item {
   position: relative;
   height: 70px;
-  width: calc(100% - 2rem);
-  border-radius: 20px;
+  width: calc(100% - 3rem);
+  border-radius: 23px;
   background: #f7f7f7;
   box-shadow: rgba(50, 50, 93, 0.25) 1px 8px 20px -2px;
   transition: 250ms;
@@ -78,7 +78,7 @@
   height: 1.5rem;
   width: 1.5rem;
   position: relative;
-  right: 3px;
+  right: 8px;
   background: #9356DC;
 }
 .functionning-container .functionning-container-items .functionning-container-item .functionning-item-num span {
@@ -102,6 +102,9 @@
 }
 .functionning-container .functionning-container-items .functionning-container-item:hover {
   background-color: rgba(147, 86, 220, 0.5);
+}
+.functionning-container .functionning-container-items .functionning-container-item:hover .functionning-item-content i {
+  color: #9356DC;
 }
 
 @media (min-width: 1024px) {
@@ -188,7 +191,7 @@
   background-color: #eaeaea;
 }
 .restaurants-container .restaurants-container-text {
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 0 0 1rem;
 }
 .restaurants-container .restaurants-container-items {
   display: flex;
@@ -217,6 +220,17 @@
      object-fit: cover;
   cursor: pointer;
 }
+.restaurants-container .restaurants-container-items .restaurant-item-card .restaurant-card-new {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  font-weight: 500;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .restaurants-container .restaurants-container-items .restaurant-item-card .restaurant-card-content {
   padding: 1rem;
   position: relative;
@@ -237,17 +251,20 @@
 }
 .restaurants-container .restaurants-container-items .restaurant-item-card .restaurant-card-content .restaurant-card-heart {
   font-size: 23px;
-  transition: all 1500ms;
+  transition: all 1500ms ease;
 }
 .restaurants-container .restaurants-container-items .restaurant-item-card .restaurant-card-content .restaurant-card-heart:hover i::before {
-  transition: all 500ms;
+  transition: all 500ms ease;
   content: "\f004";
   font-weight: 900;
-  color: #FF79DA;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurants-container .restaurants-container-items .restaurant-item-card .restaurant-card-content .restaurant-card-heart:hover {
+  transition: all 500ms ease;
   font-weight: 400;
-  color: white;
+  background: white;
 }
 .restaurants-container .restaurants-container-items .restaurant-item-card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 20px 5px;
@@ -354,14 +371,16 @@
   font-family: Shrikhand;
 }
 .menu-container .menu-container-header .menu-header-heart {
-  font-size: 25px;
+  font-size: 27px;
   transition: all 1500ms;
 }
 .menu-container .menu-container-header .menu-header-heart:hover i::before {
-  transition: all 500ms;
+  transition: all 500ms ease;
   content: "\f004";
   font-weight: 900;
-  color: #FF79DA;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-container .menu-container-header .menu-header-heart:hover {
   font-weight: 400;
@@ -380,6 +399,15 @@
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: 400;
+}
+.menu-container .menu-container-entries .container-entry .entry-title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .menu-container .menu-container-entries .container-entry .entry-item {
   background-color: white;
@@ -460,6 +488,9 @@
   border-radius: 100px;
   transform: rotate(-360deg);
   transition-duration: 800ms;
+}
+.menu-container .menu-container-entries .container-entry .entry-item .entry-item-confirm .item-confirm-icon i {
+  color: #99E2D0;
 }
 .menu-container .menu-container-entries .container-entry .entry-item:hover .entry-item-confirm {
   margin-right: 0em;

@@ -18,8 +18,8 @@
         .functionning-container-item {
             position: relative;
             height: 70px;
-            width: calc(100% - 2rem);
-            border-radius: 20px;
+            width: calc(100% - 3rem);
+            border-radius: 23px;
             background: $color-gray-secondary;
             box-shadow: rgb(50 50 93 / 25%) 1px 8px 20px -2px;
             transition: 250ms;
@@ -60,7 +60,10 @@
             &:hover {
                 
                 background-color: rgba($color: $color-primary, $alpha: 0.5);
-
+                
+                .functionning-item-content i {
+                    color: $color-primary;
+                }
             }
         }
     }
