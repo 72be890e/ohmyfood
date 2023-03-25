@@ -101,7 +101,7 @@
   font-size: 18px;
 }
 .functionning-container .functionning-container-items .functionning-container-item:hover {
-  background-color: rgba(147, 86, 220, 0.5);
+  background-color: rgba(147, 86, 220, 0.2);
 }
 .functionning-container .functionning-container-items .functionning-container-item:hover .functionning-item-content i {
   color: #9356DC;

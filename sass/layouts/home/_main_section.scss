@@ -58,9 +58,7 @@
             }
 
             &:hover {
-                
-                background-color: rgba($color: $color-primary, $alpha: 0.5);
-                
+                background-color: rgba($color: $color-primary, $alpha: 0.2);
                 .functionning-item-content i {
                     color: $color-primary;
                 }
